@@ -1,0 +1,13 @@
+
+Dirk Eddelbuettel wrote the 'ldlasb' package. It is licensed it under
+the GNU GPL (>= 2) just like Rcpp itself and many packages using Rcpp.
+
+The package reuses code from the 'cpp11' CRAN package which in its
+GitHub repo at https://github.com/r-lib/cpp11 contains an embedded
+package 'cpp11test' that is not part of the CRAN releases. It contains
+the code used in the 'motivations.Rmd' vignette in the benchmarks
+addressed here. Both 'cpp11' and 'cpp11test' are released under the
+MIT license.  Currently, authorships for 'cpp11' are, respectively,
+Jim Hester and Romain Francois as authors, with Benjamin Kietzman as a
+contributors, and RStudio as a copyright holder. The 'cpp11test'
+package lists Jim Hester as author and RStudio as a copyright holder.

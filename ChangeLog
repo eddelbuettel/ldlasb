@@ -1,0 +1,15 @@
+2021-07-29  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Date, Version): Release 0.0.1
+	* README.md: Discussion of two updated benchmarks
+	* src/release.cpp: Protect and release objects
+	* src/grow.cpp: Growing a vector
+	* src/cpp11.cpp: Generated
+	* R/cpp11.R: Generated
+	* R/man.R: Manual page stanzas
+        * demo/release.R: Benchmark protect and release
+ 	* demo/grow.R: Benchmark growing
+	* inst/figures/*: Benchmark plots
+ 	* inst/scripts/*: Helper scripts
+        * man/*.Rd: Stub help pages
+

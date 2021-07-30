@@ -1,0 +1,12 @@
+Package: ldlasb
+Type: Package
+Title: Lies, Damned Lies, and Selective Benchmarks
+Version: 0.0.1
+Date: 2021-07-29
+Author: Dirk Eddelbuettel
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: Correcting two very selectively chosen benchmarks in order to set a record straight.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.7)
+LinkingTo: Rcpp, cpp11
+RoxygenNote: 6.0.1
