@@ -1,10 +1,12 @@
 ## Lies, Damned Lies and Selective Benchmarking
 
-This repository contains a short package providing two benchmarks between [Rcpp][1] and another package on [CRAN][2] which we will refer to just as just 'other'.
+This repository contains a short package providing two benchmarks between [Rcpp][1] and [another package][2] on [CRAN][3] which we will refer to just as just 'other'.
 
-The 'other' package comes with a motivating vignette containing a lot of discussion the merits of which ("is another package needed", "is it better to restart fresh or extend an existing package", etc) may well be discussed another time, but also two benchmarks.  
+The 'other' package comes with a motivating vignette containing a lot of discussion.
+Its merits ("is another package needed", "is it better to restart fresh or extend an existing package", etc) may well be discussed another time.
+But it also contains two benchmarks ([one](https://cran.r-project.org/package=cpp11/vignettes/motivations.html#protection) and [two](https://cran.r-project.org/package=cpp11/vignettes/motivations.html#growing-vectors)).
 
-This note is about the two benchmarks.  
+This note is about these two benchmarks.
 
 One is simply outdated (and even then somewhat cheekily chosen).
 The other is so obviously misleading that it alone merited this note and code repository.
@@ -74,11 +76,23 @@ Now, if and when one actually does as the more than half-dozen _very clear_ reco
 ### Repository
 
 This repository contains all the code that is needed to run the two benchmarks, wrapped up in a small convenience package called `ldlasb`.
-It cleanly passes `R CMD check` too.
+It cleanly passes `R CMD check` too. 
+You can install it the usual ways including via, _e.g._, 
+
+```r
+remotes::install_github("eddelbuettel/ldlasb")
+```
+
+### Run Benchmarks
+
+Once the package is installed, you can reach the benchmarks via `demo(release, package="ldlasb", ask=FALSE)` and `demo(grow, package="ldlasb", ask=FALSE)`, respectively.
+
+The results shown here were generated on my standard machine (currently) running Ubuntu 20.10 with, _inter alia_, R 4.1.0 and g++ 10.3.0, on an i7-8700K cpu.
+We can expects to vary somewhat between systems and compilers, but the overall outcome should not change.
 
 ### Author
 
-This package was written by Dirk Eddelbuettel.  
+This package was written by Dirk Eddelbuettel.
 
 Code from the 'other' package was used to reproduce / replicate the benchmarks and graphs; see [here for more](inst/AUTHORS).
 
@@ -87,4 +101,5 @@ Code from the 'other' package was used to reproduce / replicate the benchmarks a
 This package is licensed under the GNU GPL, Version 2 or later.
 
 [1]: https://github.com/RcppCore/Rcpp
-[2]: https://CRAN.R-Project.org
+[2]: https://CRAN.R-Project.org/package=cpp11
+[3]: https://CRAN.R-Project.org
